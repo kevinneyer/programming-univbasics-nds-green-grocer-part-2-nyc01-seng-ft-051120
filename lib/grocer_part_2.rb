@@ -1,9 +1,18 @@
 require_relative './part_1_solution.rb'
+require 'pry'
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
+  new_cart = []
+  
+  cart.each do |item_hash|
+    if item_hash[:clearance] == true 
+      item_hash[:price] = coupon[:cost]/coupon[:num]
+      
+     
+  end 
 end
 
 def apply_clearance(cart)
